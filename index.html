@@ -13,19 +13,11 @@
 <script>
 //NIVEL 1 ES6 - Exercici 2 ------ Error de codi
 
-var users = 
-[{ firstName: 'Homer', lastName: 'Simpson' },
-{ firstName: 'Marge', lastName: 'Simpson' },
-{ firstName: 'Bart', lastName: 'Simpson' },
-{ firstName: 'Lisa', lastName: 'Simpson' },
-{ firstName: 'Maggie', lastName: 'Simpson' }];
+//NIVEL 1 ES6 - Exercici 3 ------ reduce()
+var epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+var reducer =(accumulator, currentValue) => accumulator+" "+currentValue;
 
-
-function firstName(name) {
-  var firstName = [name.firstName];
-  return firstName;
-}
-console.log(users.map(firstName));
+console.log(epic.reduce(reducer));
 
 </script>
 
