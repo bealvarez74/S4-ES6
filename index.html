@@ -11,18 +11,19 @@
 </div>
 
 <script>
-//NIVEL 1 ES6 - Exercici 4 ------ string revertit
+//NIVEL 1 ES6 - Exercici 6 ---- array tasques
+var tasks = [
+{name : 'Start React web', duration : 120},
+{name : 'Work out', duration : 60},
+{name : 'Procrastinate on facebook', duration : 240}
+];
 
-let cadenaText = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
-let cadenaR = ['un conte',...cadenaText];
-let reduir =(accumulator, currentValue) => accumulator+" "+currentValue;
-let result1= cadenaR.reduce(reduir);
-let revertida = cadenaR.reverse();
-let result2=revertida.reduce(reduir);
+function getName(item) {
+  var nomtask = [item.name];
+  return nomtask;
+}
 
-	r = (result1,result2) => `${result1}\n${result2}`;
-	console.log(r(result1,result2));
-
+console.log(tasks.map(getName));
 </script>
 
 </body>
