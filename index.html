@@ -11,11 +11,21 @@
 </div>
 
 <script>
-//NIVEL 1 ES6 - Exercici 1 ------ Convertir a funcio fletxa
+//NIVEL 1 ES6 - Exercici 2 ------ Error de codi
 
-//multiplicar 2 números
-multiply = (x1,x2) => x1*x2;
-console.log(multiply(6,5));
+var users = 
+[{ firstName: 'Homer', lastName: 'Simpson' },
+{ firstName: 'Marge', lastName: 'Simpson' },
+{ firstName: 'Bart', lastName: 'Simpson' },
+{ firstName: 'Lisa', lastName: 'Simpson' },
+{ firstName: 'Maggie', lastName: 'Simpson' }];
+
+
+function firstName(name) {
+  var firstName = [name.firstName];
+  return firstName;
+}
+console.log(users.map(firstName));
 
 </script>
 
