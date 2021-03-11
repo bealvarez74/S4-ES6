@@ -1,15 +1,59 @@
 <!doctype html>
 <html lang="es">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>S4 ES6</title>
-
+    <title>S4 ES6 N1</title>
 </head>
 <body>
-<div class="container">
-	
+<div class="container">	
 </div>
+
+<script>
+//NIVEL 1 ES6 - Exercici 1 ------ Convertir a funcio fletxa
+
+//multiplicar 2 números
+multiply = (x1,x2) => x1*x2;
+console.log(multiply(5,5));
+
+
+
+//passar a graus fahrenheit
+toCelsius = (fahrenheit) => (5/9) * (fahrenheit-32);
+console.log(toCelsius(36));
+
+
+
+// omplir 0 a l'esquerra
+ padZeros = (num,totalLen) => {
+   var numStr = num.toString();
+   var numZeros = totalLen - numStr.length;
+   for (var i = 1; i <= numZeros; i++) {
+      numStr="0" + numStr; 
+      } 
+	  return numStr;
+ }
+ console.log(padZeros(23,4));
+
+
+
+ // exponent
+power = (base, exponent) => { 
+   var result=1; 
+   for (var i=0; i < exponent; i++) { 
+         result *=base; 
+   } 
+   return result;
+} 
+console.log(power(2,2));
+
+
+// mostrar hola maria
+greet = who => `Hello ${who}`;
+console.log(greet("Maria"));
+
+</script>
+
 </body>
 </html>
