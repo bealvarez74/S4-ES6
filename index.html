@@ -13,6 +13,7 @@
 <script>
 //NIVEL 1 ES6 - Exercici 2 ------ Error de codi
 
+exercici2
 var users = 
 [{ firstName: 'Homer', lastName: 'Simpson' },
 { firstName: 'Marge', lastName: 'Simpson' },
@@ -28,6 +29,47 @@ console.log(users.map(firstName));*/
 
 const firstName = name => name.firstName;
 console.log(users.map(firstName));
+
+//multiplicar 2 números
+multiply = (x1,x2) => x1*x2;
+console.log(multiply(5,5));
+
+
+
+//passar a graus fahrenheit
+toCelsius = (fahrenheit) => (5/9) * (fahrenheit-32);
+console.log(toCelsius(36));
+
+
+
+// omplir 0 a l'esquerra
+ padZeros = (num,totalLen) => {
+   var numStr = num.toString();
+   var numZeros = totalLen - numStr.length;
+   for (var i = 1; i <= numZeros; i++) {
+      numStr="0" + numStr; 
+      } 
+	  return numStr;
+ }
+ console.log(padZeros(23,4));
+
+
+
+ // exponent
+power = (base, exponent) => { 
+   var result=1; 
+   for (var i=0; i < exponent; i++) { 
+         result *=base; 
+   } 
+   return result;
+} 
+console.log(power(2,2));
+
+
+// mostrar hola maria
+greet = who => `Hello ${who}`;
+console.log(greet("Maria"));
+
 
 </script>
 
