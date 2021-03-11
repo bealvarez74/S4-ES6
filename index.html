@@ -86,6 +86,22 @@ let result2=revertida.reduce(reduir);
 	r = (result1,result2) => `${result1}\n${result2}`;
 	console.log(r(result1,result2));
 
+//NIVEL 1 ES6 - Exercici 6 ---- array tasques
+var tasks = [
+{name : 'Start React web', duration : 120},
+{name : 'Work out', duration : 60},
+{name : 'Procrastinate on facebook', duration : 240}
+];
+
+/*function getName(item) {
+  var nomtask = [item.name];
+  return nomtask;
+}*/
+
+const getName = item => item.name;
+console.log(tasks.map(getName));
+
+  
 </script>
 
 </body>
