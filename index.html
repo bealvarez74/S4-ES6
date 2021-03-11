@@ -12,15 +12,20 @@
 
 <script>
 
+//NIVEL 1 ES6 - Exercici 4 ------ string revertit
 
-//NIVEL 1 ES6 - Exercici 3 ------ reduce()
-var epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
-var reducer =(accumulator, currentValue) => accumulator+" "+currentValue;
+let cadenaText = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+let cadenaR = ['un conte',...cadenaText];
+let reduir =(accumulator, currentValue) => accumulator+" "+currentValue;
+let result1= cadenaR.reduce(reduir);
+let revertida = cadenaR.reverse();
+let result2=revertida.reduce(reduir);
 
-console.log(epic.reduce(reducer));
+	r = (result1,result2) => `${result1}\n${result2}`;
+	console.log(r(result1,result2));
 
   
-//NIVEL 2 ES6 - Exercici 2 ------ Error de codi
+//NIVEL 1 ES6 - Exercici 2 ------ Error de codi
 var users = 
 [{ firstName: 'Homer', lastName: 'Simpson' },
 { firstName: 'Marge', lastName: 'Simpson' },
@@ -34,7 +39,6 @@ var users =
 }*/
 const firstName = name => name.firstName;
 console.log(users.map(firstName));
-
 
 	
 //NIVEL 1 ES6 - Exercici 1	
