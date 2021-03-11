@@ -18,11 +18,12 @@ var tasks = [
 {name : 'Procrastinate on facebook', duration : 240}
 ];
 
-function getName(item) {
+/*function getName(item) {
   var nomtask = [item.name];
   return nomtask;
-}
+}*/
 
+const getName = item => item.name;
 console.log(tasks.map(getName));
 </script>
 
