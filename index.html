@@ -11,9 +11,7 @@
 </div>
 
 <script>
-//NIVEL 1 ES6 - Exercici 2 ------ Error de codi
-
-exercici2
+//NIVEL 2 ES6 - Exercici 2 ------ Error de codi
 var users = 
 [{ firstName: 'Homer', lastName: 'Simpson' },
 { firstName: 'Marge', lastName: 'Simpson' },
@@ -21,24 +19,22 @@ var users =
 { firstName: 'Lisa', lastName: 'Simpson' },
 { firstName: 'Maggie', lastName: 'Simpson' }];
 
-
-function firstName(name) {
+/*function firstName(name) {
   var firstName = [name.firstName];
   return firstName;
-}
+}*/
+const firstName = name => name.firstName;
 console.log(users.map(firstName));
 
+	
+//NIVEL 1 ES6 - Exercici 1	
 //multiplicar 2 números
 multiply = (x1,x2) => x1*x2;
 console.log(multiply(5,5));
 
-
-
 //passar a graus fahrenheit
 toCelsius = (fahrenheit) => (5/9) * (fahrenheit-32);
 console.log(toCelsius(36));
-
-
 
 // omplir 0 a l'esquerra
  padZeros = (num,totalLen) => {
@@ -51,8 +47,6 @@ console.log(toCelsius(36));
  }
  console.log(padZeros(23,4));
 
-
-
  // exponent
 power = (base, exponent) => { 
    var result=1; 
@@ -62,7 +56,6 @@ power = (base, exponent) => {
    return result;
 } 
 console.log(power(2,2));
-
 
 // mostrar hola maria
 greet = who => `Hello ${who}`;
